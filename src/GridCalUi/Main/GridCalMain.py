@@ -19,22 +19,23 @@ import platform
 from collections import OrderedDict
 from typing import List, Tuple
 
-from matplotlib.colors import LinearSegmentedColormap
-from pandas.plotting import register_matplotlib_converters
-
 # Engine imports
 import GridCal.Engine.Core as core
 import GridCal.Engine.Devices as dev
-import src.GridCalUi.Session.export_results_driver as exprtdrv
-import src.GridCalUi.Session.file_handler as filedrv
-import src.GridCalUi.Session.synchronization_driver as syncdrv
 import GridCal.Engine.Simulations as sim
-import src.GridCalUi.Visualization.visualization as viz
 import GridCal.Engine.basic_structures as bs
 import GridCal.Engine.grid_analysis as grid_analysis
 from GridCal.Engine.IO.file_system import get_create_gridcal_folder
+from GridCal.__version__ import __GridCal_VERSION__
+from matplotlib.colors import LinearSegmentedColormap
+from pandas.plotting import register_matplotlib_converters
 
 # GUI imports
+import GridCalUi.Session.export_results_driver as exprtdrv
+import GridCalUi.Session.file_handler as filedrv
+import GridCalUi.Session.synchronization_driver as syncdrv
+import GridCalUi.Visualization.visualization as viz
+from GridCalUi.AboutDialogue.about_dialogue import AboutDialogueGuiGUI
 from GridCalUi.Analysis.AnalysisDialogue import GridAnalysisGUI
 from GridCalUi.BusViewer.bus_viewer_dialogue import BusViewerGUI
 from GridCalUi.ConsoleWidget import ConsoleWidget
@@ -45,15 +46,13 @@ from GridCalUi.GridEditorWidget import *
 from GridCalUi.GridEditorWidget.messages import *
 from GridCalUi.GridGenerator.grid_generator_dialogue import GridGeneratorGUI
 from GridCalUi.GuiFunctions import *
-from GridCalUi.Main.object_select_window import ObjectSelectWindow
 from GridCalUi.Main.MainWindow import Ui_mainWindow
+from GridCalUi.Main.object_select_window import ObjectSelectWindow
 from GridCalUi.ProfilesInput.profile_dialogue import ProfileInputGUI
+from GridCalUi.Session.session import SimulationSession
 from GridCalUi.SigmaAnalysis.sigma_analysis_dialogue import SigmaAnalysisGUI
 from GridCalUi.SyncDialogue.sync_dialogue import SyncDialogueWindow
 from GridCalUi.TowerBuilder.LineBuilderDialogue import TowerBuilderGUI
-from GridCalUi.Session.session import SimulationSession
-from GridCalUi.AboutDialogue.about_dialogue import AboutDialogueGuiGUI
-from GridCal.__version__ import __GridCal_VERSION__
 
 __author__ = 'Santiago Peñate Vera'
 

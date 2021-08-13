@@ -86,7 +86,8 @@ dependencies = ['setuptools>=41.0.1',
                 "h5py>=2.9.0",
                 "numba>=0.46",  # to compile routines natively
                 "folium",  # to render web maps
-                'pyproj'
+                'pyproj',
+                'GridCal'
                 ]
 
 extras_require = {
