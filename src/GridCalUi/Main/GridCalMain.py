@@ -46,6 +46,7 @@ from GridCalUi.GridEditorWidget.messages import *
 from GridCalUi.GridGenerator.grid_generator_dialogue import GridGeneratorGUI
 from GridCalUi.GuiFunctions import *
 from GridCalUi.Main.object_select_window import ObjectSelectWindow
+from GridCalUi.Main.MainWindow import Ui_mainWindow
 from GridCalUi.ProfilesInput.profile_dialogue import ProfileInputGUI
 from GridCalUi.SigmaAnalysis.sigma_analysis_dialogue import SigmaAnalysisGUI
 from GridCalUi.SyncDialogue.sync_dialogue import SyncDialogueWindow

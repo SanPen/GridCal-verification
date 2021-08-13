@@ -14,7 +14,7 @@
 # along with GridCal.  If not, see <http://www.gnu.org/licenses/>.
 
 import sys
-
+from PySide2 import QtWidgets
 from PySide2.QtWidgets import *
 
 from GridCal.Engine.Devices import *

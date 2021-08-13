@@ -1,5 +1,6 @@
 import sys
 import numpy as np
+from PySide2 import QtWidgets
 from PySide2.QtWidgets import *
 
 from GridCalUi.Session.results_model import ResultsModel

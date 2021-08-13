@@ -1,6 +1,8 @@
 import os
 import pandas as pd
 from PySide2.QtWidgets import *
+from PySide2.QtCore import *
+from PySide2 import QtCore
 from typing import List
 from GridCalUi.ProfilesInput.excel_dialog import *
 from GridCal.Engine.Devices.bus import Bus

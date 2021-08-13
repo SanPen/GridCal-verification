@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
 import math
-
+from PySide2 import QtWidgets
 from PySide2.QtWidgets import *
 
 from GridCalUi.GuiFunctions import get_list_model
